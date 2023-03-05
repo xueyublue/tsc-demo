@@ -1,5 +1,10 @@
 Install typescript globally
 $ sudo npm install -g typescript
+$ npm install --location=global typescript
+
+For WIN only
+- open PowerShell as Adminsitrator
+- run "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned"
 
 To verify 
 $ tsc -v
