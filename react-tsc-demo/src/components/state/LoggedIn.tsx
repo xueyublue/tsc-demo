@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+//! for simple date type of state, typescript is smart enough to know what to do by checking its initial value,
+//! so, we will not need to write any typescript specific code.
 export default function LoggedIn() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogin = () => {
