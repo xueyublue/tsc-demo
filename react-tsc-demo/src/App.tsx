@@ -11,8 +11,9 @@ function App() {
   return (
     <div className="App">
       {/* Simple Attribute */}
-      <Greet name="Darren" isLoggedIn={true} />
       <Greet name="Darren" messageCount={15} isLoggedIn={true} />
+      {/* Optional Attribute */}
+      <Greet name="Darren" isLoggedIn={true} />
       {/* Object Type */}
       <Person name={personName} />
       {/* List Type */}
