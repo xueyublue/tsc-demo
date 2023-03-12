@@ -9,10 +9,10 @@ import { personName, personNameList } from "./data";
 import Button from "./components/event/Button";
 import Input from "./components/event/Input";
 import Container from "./components/style/Container";
-import LoggedIn from "./components/state/LoggedIn";
-import User from "./components/state/User";
-import UserNotNull from "./components/state/UserNotNull";
-import Counter from "./components/reducer/Counter";
+import LoggedIn from "./components/ueState/LoggedIn";
+import User from "./components/ueState/User";
+import UserNotNull from "./components/ueState/UserNotNull";
+import Counter from "./components/ueReducer/Counter";
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
       <User />
       <UserNotNull />
 
-      {/* Reducer */}
+      {/* Reducer - Also shows how to conditional set attribute optional */}
       <Counter />
     </div>
   );
