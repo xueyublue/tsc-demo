@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header title="Typescript Demo" color="red" />
-      <Greet name="Darren" />
+      <Greet name="Darren" messageCount={15} isLoggedIn={false} />
     </div>
   );
 }
