@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-type AutheUser = {
+type AuthUser = {
   name: string;
   email: string;
 };
 
 export default function User() {
   //! to indicate: the state value could be AuthUser or null
-  const [user, setUser] = useState<AutheUser | null>(null);
+  const [user, setUser] = useState<AuthUser | null>(null);
   const handleLogin = () => {
     setUser({
       name: "Darren",
