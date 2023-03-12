@@ -13,6 +13,8 @@ import LoggedIn from "./components/ueState/LoggedIn";
 import User from "./components/ueState/User";
 import UserNotNull from "./components/ueState/UserNotNull";
 import Counter from "./components/ueReducer/Counter";
+import { ThemeContextProvider } from "./components/useContext/ThemeContext";
+import Box from "./components/useContext/Box";
 
 function App() {
   return (
@@ -47,6 +49,11 @@ function App() {
 
       {/* Reducer - Also shows how to conditional set attribute optional */}
       <Counter />
+
+      {/* Context */}
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }

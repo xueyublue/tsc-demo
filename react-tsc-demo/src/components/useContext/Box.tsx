@@ -1,5 +1,7 @@
-import React from "react";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 export default function Box() {
-  return <div>Box</div>;
+  const theme = useContext(ThemeContext);
+  return <div style={{ backgroundColor: theme.primary.main, color: theme.primary.text }}>Box</div>;
 }
