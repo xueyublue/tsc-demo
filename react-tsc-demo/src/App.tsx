@@ -6,6 +6,8 @@ import Heading from "./components/basics/Heading";
 import Status from "./components/basics/Status";
 import Oscar from "./components/basics/Oscar";
 import { personName, personNameList } from "./data";
+import Button from "./components/event/Button";
+import Input from "./components/event/Input";
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
       <Oscar>
         <Heading>I am simple heading in another component</Heading>
       </Oscar>
+
+      {/* Event */}
+      <Button handleClick={(event, id) => console.log("button clicked.", event, id)} />
+      <Input value="" handleChange={(event) => console.log("input", event)} />
     </div>
   );
 }
