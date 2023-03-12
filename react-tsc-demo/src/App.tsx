@@ -11,10 +11,12 @@ import Input from "./components/event/Input";
 import Container from "./components/style/Container";
 import LoggedIn from "./components/ueState/LoggedIn";
 import User from "./components/ueState/User";
+import User2 from "./components/useContextFutureValue/User";
 import UserNotNull from "./components/ueState/UserNotNull";
 import Counter from "./components/ueReducer/Counter";
 import { ThemeContextProvider } from "./components/useContext/ThemeContext";
 import Box from "./components/useContext/Box";
+import { UserContextProvider } from "./components/useContextFutureValue/UserContext";
 
 function App() {
   return (
@@ -54,6 +56,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User2 />
+      </UserContextProvider>
     </div>
   );
 }
