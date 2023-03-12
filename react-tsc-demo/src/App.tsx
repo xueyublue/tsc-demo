@@ -11,6 +11,7 @@ import Input from "./components/event/Input";
 import Container from "./components/style/Container";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
+import UserNotNull from "./components/state/UserNotNull";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       {/* State */}
       <LoggedIn />
       <User />
+      <UserNotNull />
     </div>
   );
 }
