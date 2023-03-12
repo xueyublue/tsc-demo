@@ -1,8 +1,9 @@
 import "./App.css";
-import Greet from "./components/Greet";
-import Header from "./components/Header";
-import Person from "./components/Person";
-import PersonList from "./components/PersonList";
+import Greet from "./components/basic/Greet";
+import Header from "./components/basic/Header";
+import Person from "./components/basic/Person";
+import PersonList from "./components/basic/PersonList";
+import Status from "./components/Status";
 
 function App() {
   const personName = {
@@ -33,6 +34,8 @@ function App() {
       <Person name={personName} />
       {/* List Type */}
       <PersonList list={personNameList} />
+      {/* Advanced Type */}
+      <Status status="loading" />
     </div>
   );
 }
