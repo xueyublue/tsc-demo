@@ -1,11 +1,11 @@
 import "./App.css";
-import Greet from "./components/basic/Greet";
-import Person from "./components/basic/Person";
-import PersonList from "./components/basic/PersonList";
-import Heading from "./components/Heading";
-import Status from "./components/Status";
+import Greet from "./components/basics/Greet";
+import Person from "./components/basics/Person";
+import PersonList from "./components/basics/PersonList";
+import Heading from "./components/basics/Heading";
+import Status from "./components/basics/Status";
+import Oscar from "./components/basics/Oscar";
 import { personName, personNameList } from "./data";
-import Oscar from "./components/Oscar";
 
 function App() {
   return (
