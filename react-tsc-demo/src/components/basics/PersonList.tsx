@@ -1,8 +1,16 @@
+// option 1
+// type PersonListProps = {
+//   list: {
+//     firstName: string;
+//     lastName: string;
+//   }[];
+// };
+
+// option 2 - reusable type
+import { Name } from "./Person.types";
+
 type PersonListProps = {
-  list: {
-    firstName: string;
-    lastName: string;
-  }[];
+  list: Name[];
 };
 
 export default function PersonList(props: PersonListProps) {
