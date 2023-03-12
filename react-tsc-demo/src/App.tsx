@@ -8,6 +8,7 @@ import Oscar from "./components/basics/Oscar";
 import { personName, personNameList } from "./data";
 import Button from "./components/event/Button";
 import Input from "./components/event/Input";
+import Container from "./components/style/Container";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
       {/* Event */}
       <Button handleClick={(event, id) => console.log("button clicked.", event, id)} />
       <Input value="" handleChange={(event) => console.log("input", event)} />
+
+      {/* Style */}
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </div>
   );
 }
