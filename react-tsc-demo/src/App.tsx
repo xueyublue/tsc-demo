@@ -12,6 +12,7 @@ import Container from "./components/style/Container";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
 import UserNotNull from "./components/state/UserNotNull";
+import Counter from "./components/reducer/Counter";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
       <LoggedIn />
       <User />
       <UserNotNull />
+
+      {/* Reducer */}
+      <Counter />
     </div>
   );
 }
