@@ -4,10 +4,17 @@ type CounterState = {
   count: number;
 };
 
-type CounterAction = {
-  type: string;
+type UpdateAction = {
+  type: "increment" | "decrement";
   payload: number;
 };
+
+type ResetAction = {
+  type: "reset";
+};
+
+//! This is very important, and shows how to make payload optional when action is "reset"
+type CounterAction = UpdateAction | ResetAction;
 
 const initialState = { count: 0 };
 
@@ -22,6 +29,8 @@ function reducer(state: CounterState, action: CounterAction) {
       return {
         count: state.count - action.payload,
       };
+    case "reset":
+      return initialState;
     default:
       return state;
   }
@@ -37,6 +46,9 @@ export default function Counter() {
       </button>
       <button type="button" onClick={() => dispatch({ type: "decrement", payload: 10 })}>
         Decrement by 10
+      </button>
+      <button type="button" onClick={() => dispatch({ type: "reset" })}>
+        Reset
       </button>
     </>
   );
