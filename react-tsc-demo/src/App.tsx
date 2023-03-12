@@ -9,6 +9,8 @@ import { personName, personNameList } from "./data";
 import Button from "./components/event/Button";
 import Input from "./components/event/Input";
 import Container from "./components/style/Container";
+import LoggedIn from "./components/state/LoggedIn";
+import User from "./components/state/User";
 
 function App() {
   return (
@@ -35,6 +37,10 @@ function App() {
 
       {/* Style */}
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+
+      {/* State */}
+      <LoggedIn />
+      <User />
     </div>
   );
 }
