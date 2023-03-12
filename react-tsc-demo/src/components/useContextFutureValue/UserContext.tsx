@@ -14,6 +14,7 @@ type UserContextProviderProps = {
   children: React.ReactNode;
 };
 
+//! with empty object as initial value, we dont need to do null check when using it.
 export const UserContext = createContext({} as UserContextType);
 
 export const UserContextProvider = ({ children }: UserContextProviderProps) => {
