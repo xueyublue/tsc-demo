@@ -1,11 +1,9 @@
-import React from "react";
-
-export interface Props {
+type HeaderProps = {
   title: string;
-  color?: string;
-}
+  color?: string; // optional
+};
 
-export default function Header(props: Props) {
+export default function Header(props: HeaderProps) {
   return (
     <header>
       <h1 style={{ color: props.color ? props.color : "blue" }}>{props.title}</h1>

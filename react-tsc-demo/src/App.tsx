@@ -3,32 +3,16 @@ import Greet from "./components/basic/Greet";
 import Header from "./components/basic/Header";
 import Person from "./components/basic/Person";
 import PersonList from "./components/basic/PersonList";
+import Heading from "./components/Heading";
 import Status from "./components/Status";
+import { personName, personNameList } from "./data";
 
 function App() {
-  const personName = {
-    firstName: "John",
-    lastName: "Doe",
-  };
-  const personNameList = [
-    {
-      firstName: "John",
-      lastName: "Doe",
-    },
-    {
-      firstName: "Eric",
-      lastName: "Chou",
-    },
-    {
-      firstName: "Jasline",
-      lastName: "Tan",
-    },
-  ];
-
   return (
     <div className="App">
+      {/* Optional Attribute */}
       <Header title="Typescript Demo" color="red" />
-      {/* Basic */}
+      {/* Simple Attribute */}
       <Greet name="Darren" messageCount={15} isLoggedIn={false} />
       {/* Object Type */}
       <Person name={personName} />
@@ -36,6 +20,7 @@ function App() {
       <PersonList list={personNameList} />
       {/* Advanced Type */}
       <Status status="loading" />
+      <Heading>I am a simple heading</Heading>
     </div>
   );
 }

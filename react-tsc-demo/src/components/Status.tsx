@@ -1,5 +1,6 @@
+// union
 type StatusProps = {
-  status: string;
+  status: "loading" | "success" | "error";
 };
 
 export default function Status(props: StatusProps) {
