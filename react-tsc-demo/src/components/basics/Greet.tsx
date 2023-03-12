@@ -8,12 +8,11 @@ type GreetProps = {
   isLoggedIn: boolean;
 };
 
-const Greet = (props: GreetProps) => {
-  // assign default value 0 props not exists
-  const { messageCount = 0 } = props;
+// destructure props
+const Greet = ({ name, messageCount = 0, isLoggedIn }: GreetProps) => {
   return (
     <div>
-      <h2>{props.isLoggedIn ? `Welcome ${props.name}! You have ${messageCount} unread messages.` : "Welcome Guest"}</h2>
+      <h2>{isLoggedIn ? `Welcome ${name}! You have ${messageCount} unread messages.` : "Welcome Guest"}</h2>
     </div>
   );
 };
