@@ -1,5 +1,14 @@
-import React from "react";
+import Login from "./Login";
 
-export default function Private() {
-  return <div>Private</div>;
+type PrivateProps = {
+  isLoggedIn: boolean;
+  Component: any;
+};
+
+export default function Private({ isLoggedIn, Component }: PrivateProps) {
+  if (isLoggedIn) {
+    return <Component />;
+  } else {
+    return <Login />;
+  }
 }
