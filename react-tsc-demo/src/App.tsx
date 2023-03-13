@@ -14,6 +14,7 @@ import User from "./components/ueState/User";
 import User2 from "./components/useContextFutureValue/User";
 import UserNotNull from "./components/ueState/UserNotNull";
 import Counter from "./components/ueReducer/Counter";
+import Counter2 from "./components/class/Counter";
 import { ThemeContextProvider } from "./components/useContext/ThemeContext";
 import Box from "./components/useContext/Box";
 import { UserContextProvider } from "./components/useContextFutureValue/UserContext";
@@ -59,6 +60,9 @@ function App() {
       <UserContextProvider>
         <User2 />
       </UserContextProvider>
+
+      {/* Class */}
+      <Counter2 message="The count value is " />
     </div>
   );
 }
